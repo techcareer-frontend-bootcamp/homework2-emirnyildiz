@@ -9,14 +9,119 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   
 </head>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-image: url("assets/img/background.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-size: cover;
+    }
+
+    div a i {
+        height: 15px;
+        
+    }
+    
+    nav div h1 {
+        margin: 10px 0 0 20px;
+        font-size: 24px;
+
+    }
+
+    ul li {
+        display: inline-block;
+        margin-right: 10px;
+        color: black;
+
+    }
+    ul li a{
+        color:gray ;
+        font-size: 12px;
+
+    }
+
+    ul {
+        float:right; 
+        display: inline-block;
+        margin: 20px 20px 0 0 ;
+    }
+
+    .div1 {
+        position: absolute; 
+        bottom:50%; top:50%; 
+        color:white; 
+        font-size: 24px; 
+        display: inline-block; 
+        margin-left: 30px; 
+    }
+
+    .div2 {
+        float:right; 
+        margin-top: 30%;
+         margin-right: 80px; 
+         position: relative;
+    }
+
+    .div2 h3 {
+       display: inline-block; 
+       font-size: 12px; 
+       color: gray; 
+       font-weight: 400; 
+       margin: 5px 10px 0 0 
+    }
+
+    .div2 a {
+        display: inline-block;
+         border-style: none;
+          border-radius:50%;
+            position: absolute;
+    }
+
+    .div2 a i {
+        background:#f1b4ab; 
+        height: 24px; 
+        border-radius: 50%; 
+        font-size: 24px;
+    }
+</style>
 <body>
     <!-- HEADER -->
     <header>
-        <h1>Starter Template</h1>
+        
+        <nav> 
+            
+            <div >
+                <h1 style="display: inline-block;">Logo<span style="color:white">Area</span></h1>
+                <ul >
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Top5</a></li>
+                    <li><a href="">Library</a></li>
+                    <li><a href="">Connect</a></li>
+                </ul>
+            </div>
+            
+        </nav>
     </header>
 
     <!-- MAIN CONTENT -->
     <main>
+    
+    <div class="div1" >
+        <h1>NEVER</h1>
+        <h1>STOP</h1>
+        <h1>LISTENING</h1>
+    </div>
+    <div class="div2">
+        <h3 >Click here to listen </h3>
+        <a  href=""><i  class='bx bx-play-circle'></i></a>
+    </div>
         <!-- HOME --> 
     </main>
 
@@ -25,10 +130,13 @@
         <a href="#" target="_blank" rel="noopener noreferrer">
             <i class='bx bxl-youtube'></i>
         </a> 
-        
-        ... 
-
-        ...
+        <a href="#" target="_blank" rel="noopener noreferrer">
+            <i style="margin-left:10px;" class='bx bxl-instagram'></i>
+        </a> 
+        <a href="#" target="_blank" rel="noopener noreferrer">
+            <i style="margin-left:10px;" class='bx bxl-twitter'></i>
+        </a> 
+    
     </div>
 
     <!-- MAIN JS;-->
