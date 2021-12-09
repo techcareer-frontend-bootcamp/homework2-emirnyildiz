@@ -16,6 +16,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        list-style: none;
     }
     body {
         background-repeat: no-repeat;
@@ -25,20 +26,31 @@
         height: 100vh; 
           
     }
+
+    header nav div {
+        display: flex; 
+        justify-content: space-between;
+        align-items: baseline;
+        
+    }
+    header nav div a:hover {
+        color:white;
+    }
+    main div h3:hover {
+        color:white;
+    }
     
     nav > div > h1 {
         margin: 10px 0 0 20px;
-        font-size: 32px;
+        font-size: 28px;
     }
 
-    ul {
-        float:right; 
-        display: block;
+    ul {   
+        display: flex;
         margin: 20px 20px 0 0 ;
     }
 
     ul > li {
-        display: inline-block;
         margin-right: 10px;
         color: black;
     }
@@ -50,18 +62,24 @@
     div > a > i {
         height: 15px;  
     }
+
+    main { 
+        display: flex; 
+        align-items: baseline;
+        align-items: center;
+        height: 100vh;
+        justify-content: space-between;
+    }
+
     .div1 {
-         display: flex;
-         position: absolute;
-         right: 0px;
-         bottom:40%;
+         display: flex;     
+         right: 0px;      
          margin: 0 5% 0 0;
+         flex-wrap: wrap;
     }
 
     .div2 {
-        position: absolute;
-        bottom:50%;
-        top:50%;
+        
         color: white;
         margin: 0 0 0 5%;
     }
@@ -69,13 +87,13 @@
     .div1 > h3 {      
        color: gray; 
        font-weight: 400;
-       display: block;
+       
     }
 
     .div1 > a {   
         border-style: none;
         border-radius:50%;   
-        display: block; 
+        align-items: baseline;
         margin-left:  10px;
     }
 
@@ -85,6 +103,9 @@
         border-radius: 50%; 
         font-size: 24px;
     }
+
+    
+    
 </style>
 <body>
     <!-- HEADER -->
@@ -92,9 +113,9 @@
         
         <nav> 
             
-            <div >
-                <h1 style="display: inline-block;">Logo<span style="color:white">Area</span></h1>
-                <ul >
+            <div>
+                <h1 >Logo<span style="color:white">Area</span></h1>
+                <ul  >
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Top5</a></li>
@@ -107,14 +128,14 @@
     </header>
 
     <!-- MAIN CONTENT -->
-    <main style="display: flex;"> 
+    <main > 
     
         <div class="div2" >
             <h1>NEVER <br>
                 STOP <br>
                 LISTENING</h1>
         </div>
-        <div class="div1">
+        <div class="div1" >
             <h3 >Click here to listen </h3>
             <a  href=""><i  class='bx bx-play-circle'></i></a>
         </div>
